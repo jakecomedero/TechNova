@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <h1>TechNova</h1>
+    <h2>Innovating the Future</h2>
+
+    <nav class="navigation">
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-toggle">☰</button>
+    </nav>
+</header>
+
+<main>
+
+    <section id="home" class="hero-section">
+        <article>
+            <h3>Welcome to TechNova</h3>
+            <h4>Your Partner in Digital Solutions</h4>
+            <h5>Reliable • Secure • Innovative</h5>
+
+            <p>
+                We provide modern technology solutions that help businesses grow
+                and adapt in a digital world.
+            </p>
+            <a href=>
+            <button class="primary-button">Get Started</button>
+            <button class="secondary-button">Learn More</button>
+            </a>
+        </article>
+        <img src="https://media.licdn.com/dms/image/v2/D4D12AQHlVnYbr7I68g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1708546416656?e=2147483647&v=beta&t=UkGA8hdANbqcsz_XGPvHY13DgklP7qaA3yaIfSqnw_s" height="300" width="1000" alt="Technology workspace illustration">
+    </section>
+
+    <section id="features" class="features-section">
+        <h3>Our Features</h3>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="https://png.pngtree.com/png-clipart/20250109/original/pngtree-cloud-technology-icon-png-image_3984717.png" height="250" alt="Cloud technology icon" title="clouds yarn">
+                <h4>Cloud Solutions</h4>
+                <p>Secure and scalable cloud services.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/8631/8631502.png" height="250" alt="Security shield icon" title="shield yarn">
+                <h4>Cyber Security</h4>
+                <p>Protect your data with advanced security.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/16139/16139677.png" height="250" alt="Analytics dashboard icon" title="data yarn">
+                <h4>Data Analytics</h4>
+                <p>Make smart decisions with real insights.</p>
+            </div>
+        </div>
+
+        <ul class="feature-list">
+            <li>24/7 Support</li>
+            <li>Professional Team</li>
+            <li>Affordable Pricing</li>
+        </ul>
+    </section>
+
+    <section id="about" class="about-section">
+        <h3>About Us</h3>
+
+        <p>
+            <span class="highlight-text">TechNova</span> is a leading tech company
+            focused on innovation, quality, and customer satisfaction.
+        </p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h3>Contact Us</h3>
+        <p>Email us at <a href="mailto:info@technova.com" target="_blank">info@technova.com</a></p>
+        <p>Follow us on <a href="https://www.facebook.com/jake.comedero" target="_blank">Facebook</a> and 
+            <a href="https://www.instagram.com/itsurjiki?igsh=NTM1YTh5a212aGRo" target="_blank">Instagram</a></p>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 TechNova. All rights reserved.</p>
+</footer>
+
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+
+    toggle.addEventListener('click', () => {
+        navList.classList.toggle('show-menu');
+    });
+</script>
+
+</body>
+</html>
