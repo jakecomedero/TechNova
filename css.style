@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Color Scheme */
+:root {
+    --primary-color: #00060f;
+    --secondary-color: #f4f4f4;
+    --accent-color: #ff0000;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: var(--accent-color);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 24px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    background-color: var(--secondary-color);
+}
+
+.hero-section img {
+    max-width: 100%;
+}
+
+/* Buttons */
+.primary-button,
+.secondary-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.primary-button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #084bb5;
+    transform: scale(1.05);
+}
+
+.secondary-button {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #cc7a00;
+    transform: scale(1.05);
+}
+
+/* Features Section */
+.features-section {
+    padding: 40px;
+}
+
+.features-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+/* About Section */
+.about-section {
+    padding: 40px;
+    background-color: #e0ecff;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Footer */
+.site-footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .features-grid {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+    }
+
+    .nav-list.show-menu {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
